@@ -4,14 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Forms</title>
+    <link rel="stylesheet" href="/css/mian_style.css">
     <style>
-        .green{
+        .green,
+        .red,
+        .blue{
             background-color: green;
             height: 2rem;
             width: 30%;
-            float: right;
         }
-        .red{
+        /* .red{
             background-color: red;
             height: 2rem;
             width: 30%;
@@ -20,7 +22,7 @@
             background-color: blue;
             height: 2rem;
             width: 30%;
-        }
+        } */
     </style>
 </head>
 <body>
@@ -47,7 +49,7 @@
 
     </footer>
     <!-- Capturing some info:  -->
-    <form action="" method="get">
+    <form action="" method="get" class="form">
         <!-- User first name: -->
         <div class="green">
             <!-- <label for="firstname">Name:</label> -->
@@ -55,7 +57,7 @@
         </div>
 
         <!-- User surname -->
-        <div class="red">
+        <div class="red" style="background-color: #bada55;">
             <!-- <label for="surname">Surname:</label> -->
             <input type="text" placeholder="Enter your second name" required>
         </div>
