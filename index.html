@@ -4,30 +4,70 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Forms</title>
+    <style>
+        .green{
+            background-color: green;
+            height: 2rem;
+            width: 30%;
+            float: right;
+        }
+        .red{
+            background-color: red;
+            height: 2rem;
+            width: 30%;
+        }
+        .blue{
+            background-color: blue;
+            height: 2rem;
+            width: 30%;
+        }
+    </style>
 </head>
 <body>
+    <!-- Symantic HTML: -->
+    <header>
+        <nav></nav>
+    </header>
+
+    <!-- Main body -->
+    <main>
+        <section>
+            <article>
+
+            </article>
+        </section>
+
+        <aside>
+
+        </aside>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+
+    </footer>
     <!-- Capturing some info:  -->
     <form action="" method="get">
         <!-- User first name: -->
-        <div>
-            <label for="firstname">Name:</label>
+        <div class="green">
+            <!-- <label for="firstname">Name:</label> -->
             <input type="text" placeholder="Please enter your first firstname" name="firstname" required>
         </div>
 
         <!-- User surname -->
-        <div>
-            <label for="surname">Surname:</label>
+        <div class="red">
+            <!-- <label for="surname">Surname:</label> -->
             <input type="text" placeholder="Enter your second name" required>
         </div>
 
         <!-- User Email: -->
-        <div>
-            <label for="email">Email:</label>
+        <div class="blue">
+            <!-- <label for="email">Email:</label> -->
             <input type="email" name="email" placeholder="youremail@axample.com">
         </div>
 
         <!-- Text area to give input -->
-        <textarea name="userTExtArea" id="textarea" cols="30" rows="10" placeholder="Please enter some text"></textarea>
+        <textarea name="userTextArea" id="textarea" cols="30" rows="10" placeholder="Please enter some text"></textarea>
 
         <!-- Password: -->
         <div>
